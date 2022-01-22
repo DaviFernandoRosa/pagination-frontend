@@ -16,7 +16,7 @@ function App() {
 			.then(result => {
 				setRestaurantList(result)
 			})
-	}
+	 }
 
 	const dataQuantity = () => {
 		fetch(`http://localhost:3000/count`, { method: "GET" })
@@ -24,7 +24,7 @@ function App() {
 			.then(result => {
 				setTotalItens(result.count)
 			})
-	}
+	 }
 
 	useEffect(() => {
 		setCurrentPage(0);
